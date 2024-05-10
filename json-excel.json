@@ -1,0 +1,483 @@
+[
+    {
+        "project_id": 39,
+        "workload_id": 2606,
+        "file_id": null,
+        "filename": "samplejkuop.pdf",
+        "kpi_compliance": null,
+        "id": 2764010,
+        "created_at": "2024-05-02T06:26:06.575716",
+        "kpi_lifecycle": null,
+        "order": 2764072,
+        "updated_at": null,
+        "kpi_multiallocations": null,
+        "order_str": "000001",
+        "updated_by": null,
+        "row_capture": {
+            "PageNo": 1,
+            "Hierarchy": "",
+            "Original_Hierarchy": null,
+            "Text": "A Simple PDF File",
+            "Context": "",
+            "SubType": "Heading",
+            "RawData": null,
+            "Coordinates": {
+                "width": 612,
+                "height": 792,
+                "x1": 64,
+                "y1": 50,
+                "x2": 612,
+                "y2": 72,
+                "page": 1
+            },
+            "Recheck": false,
+            "Type": "Text",
+            "i18n": {
+                "en": "A Simple PDF File"
+            },
+            "updated_at": null,
+            "id": 2764010,
+            "Characterization": "Information",
+            "Char_Score": "High",
+            "Category": "Information",
+            "Category_Score": "High",
+            "System Entities": "",
+            "Activities": "",
+            "Acronyms": "",
+            "project_management": null,
+            "Finance": null,
+            "Commercial": null,
+            "Contractual": null,
+            "Digital": "",
+            "Cybersecurity": "",
+            "Standards": null,
+            "Allocation": {
+                "NA": 0
+            }
+        },
+        "lifecycles": [],
+        "allocations": []
+    },
+    {
+        "project_id": 39,
+        "workload_id": 2606,
+        "file_id": null,
+        "filename": "samplejkuop.pdf",
+        "kpi_compliance": "need-clarification",
+        "id": 2764011,
+        "created_at": "2024-05-02T06:26:06.575720",
+        "kpi_lifecycle": "need-clarification",
+        "order": 2764073,
+        "updated_at": null,
+        "order_str": "000002",
+        "updated_by": null,
+        "row_capture": {
+            "PageNo": 1,
+            "Hierarchy": "",
+            "Original_Hierarchy": null,
+            "Text": "This is a small demonstration .pdf file - just for use in the Virtual Mechanics tutorials. More text. And more text. And more text. And more text. And more text.",
+            "Context": "",
+            "SubType": "Paragraph",
+            "RawData": null,
+            "Coordinates": {
+                "width": 612,
+                "height": 792,
+                "x1": 72,
+                "y1": 93,
+                "x2": 612,
+                "y2": 136,
+                "page": 1
+            },
+            "Recheck": false,
+            "Type": "Text",
+            "i18n": {
+                "en": "This is a small demonstration .pdf file - just for use in the Virtual Mechanics tutorials. More text. And more text. And more text. And more text. And more text."
+            },
+            "updated_at": null,
+            "id": 2764011,
+            "Characterization": "Requirement",
+            "Char_Score": "Low",
+            "Category": "Non-Technical Req",
+            "Category_Score": "Medium",
+            "System Entities": "",
+            "Activities": "",
+            "Acronyms": "",
+            "project_management": null,
+            "Finance": null,
+            "Commercial": null,
+            "Contractual": null,
+            "Digital": "",
+            "Cybersecurity": "",
+            "Standards": null,
+            "Allocation": {
+                "SIG System": "Medium"
+            }
+        },
+        "allocations": [
+            {
+                "owning_id": 2764011,
+                "id": 575438,
+                "pbs": "Cybersecurity",
+                "allocation_score": "",
+                "obs": null,
+                "created_by": 115,
+                "updated_at": null,
+                "compliance": "tbd",
+                "allocation": "115_17147223080241",
+                "abs": null,
+                "receiver": null,
+                "created_at": "2024-05-03T07:45:09.495185",
+                "lifecycle": "characterized"
+            },
+            {
+                "owning_id": 2764011,
+                "id": 575439,
+                "pbs": "Diagnostic and Maintenance System",
+                "allocation_score": "",
+                "obs": null,
+                "created_by": 115,
+                "updated_at": null,
+                "compliance": "tbd",
+                "allocation": "115_17147223080242",
+                "abs": null,
+                "receiver": null,
+                "created_at": "2024-05-03T07:45:09.553660",
+                "lifecycle": "characterized"
+            },
+            {
+                "owning_id": 2764011,
+                "id": 575440,
+                "pbs": "Communication Network and Security",
+                "allocation_score": "",
+                "obs": null,
+                "created_by": 115,
+                "updated_at": null,
+                "compliance": "tbd",
+                "allocation": "115_17147223080243",
+                "abs": null,
+                "receiver": null,
+                "created_at": "2024-05-03T07:45:09.579170",
+                "lifecycle": "characterized"
+            },
+            {
+                "owning_id": 2764011,
+                "id": 575434,
+                "pbs": "SIG System",
+                "allocation_score": "Medium",
+                "obs": "IXL Leader",
+                "created_by": null,
+                "updated_at": "2024-05-02T06:41:30",
+                "compliance": "need-clarification",
+                "allocation": "SIG System",
+                "abs": "Cybersecurity Risk Assessment",
+                "receiver": 115,
+                "created_at": "2024-05-02T06:28:09.504530",
+                "lifecycle": "need-clarification"
+            }
+        ]
+    },
+    {
+        "project_id": 39,
+        "workload_id": 2606,
+        "file_id": null,
+        "filename": "samplejkuop.pdf",
+        "kpi_compliance": "tbd",
+        "id": 2764012,
+        "created_at": "2024-05-02T06:26:06.575722",
+        "kpi_lifecycle": "recaptured",
+        "order": 2764074,
+        "updated_at": null,
+        "order_str": "000003",
+        "updated_by": null,
+        "row_capture": {
+            "PageNo": 1,
+            "Hierarchy": "",
+            "Original_Hierarchy": null,
+            "Text": "And more text. And more text. And more text. And more text. And more text. And more text. Boring, zzzzz. And more text. And more text. And more text. And more text. And more text. And more text. And more text. And more text. And more text.",
+            "Context": "",
+            "SubType": "Paragraph",
+            "RawData": null,
+            "Coordinates": {
+                "width": 612,
+                "height": 792,
+                "x1": 72,
+                "y1": 158,
+                "x2": 612,
+                "y2": 201,
+                "page": 1
+            },
+            "Recheck": false,
+            "Type": "Text",
+            "i18n": {
+                "en": "And more text. And more text. And more text. And more text. And more text. And more text. Boring, zzzzz. And more text. And more text. And more text. And more text. And more text. And more text. And more text. And more text. And more text."
+            },
+            "updated_at": null,
+            "id": 2764012,
+            "Characterization": "Requirement",
+            "Char_Score": "Low",
+            "Category": "Non-Technical Req",
+            "Category_Score": "High",
+            "System Entities": "",
+            "Activities": "",
+            "Acronyms": "",
+            "project_management": null,
+            "Finance": null,
+            "Commercial": null,
+            "Contractual": null,
+            "Digital": "",
+            "Cybersecurity": "",
+            "Standards": null,
+            "Allocation": {
+                "SIG System": "low"
+            }
+        },
+        "allocations": [
+            {
+                "owning_id": 2764012,
+                "id": 575435,
+                "pbs": "SIG System",
+                "allocation_score": "low",
+                "obs": "IXL Leader",
+                "created_by": null,
+                "updated_at": "2024-05-02T06:41:30",
+                "compliance": "tbd",
+                "allocation": "SIG System",
+                "abs": "Cybersecurity Risk Assessment",
+                "receiver": 115,
+                "created_at": "2024-05-02T06:28:09.522083",
+                "lifecycle": "recaptured"
+            }
+        ]
+    },
+    {
+        "project_id": 39,
+        "workload_id": 2606,
+        "file_id": null,
+        "filename": "samplejkuop.pdf",
+        "kpi_compliance": "tbd",
+        "id": 2764013,
+        "created_at": "2024-05-02T06:26:06.575723",
+        "kpi_lifecycle": "assigned",
+        "order": 2764075,
+        "updated_at": null,
+        "kpi_multiallocations": [
+            {
+                "allocation": "SIG System",
+                "lifecycle": "assigned",
+                "compliance": "tbd",
+                "user_id": 115,
+                "created_at": "02-05-2024 06:39:02"
+            }
+        ],
+        "order_str": "000004",
+        "updated_by": null,
+        "row_capture": {
+            "PageNo": 1,
+            "Hierarchy": "",
+            "Original_Hierarchy": null,
+            "Text": "And more text. And more text. And more text. And more text. And more text. And more text. And more text. Even more. Continued on page 2 ...",
+            "Context": "",
+            "SubType": "Paragraph",
+            "RawData": null,
+            "Coordinates": {
+                "width": 612,
+                "height": 792,
+                "x1": 72,
+                "y1": 216,
+                "x2": 612,
+                "y2": 237,
+                "page": 1
+            },
+            "Recheck": false,
+            "Type": "Text",
+            "i18n": {
+                "en": "And more text. And more text. And more text. And more text. And more text. And more text. And more text. Even more. Continued on page 2 ..."
+            },
+            "updated_at": null,
+            "id": 2764013,
+            "Characterization": "Requirement",
+            "Char_Score": "Low",
+            "Category": "Non-Technical Req",
+            "Category_Score": "High",
+            "System Entities": "",
+            "Activities": "",
+            "Acronyms": "",
+            "project_management": null,
+            "Finance": null,
+            "Commercial": null,
+            "Contractual": null,
+            "Digital": "",
+            "Cybersecurity": "",
+            "Standards": null,
+            "Allocation": {
+                "SIG System": "low"
+            }
+        },
+        "allocations": [
+            {
+                "owning_id": 2764013,
+                "id": 575436,
+                "pbs": "SIG System",
+                "allocation_score": "low",
+                "obs": "IXL Leader",
+                "created_by": null,
+                "updated_at": "2024-05-02T06:39:02",
+                "compliance": "tbd",
+                "allocation": "SIG System",
+                "abs": "Cybersecurity Risk Assessment",
+                "receiver": 115,
+                "created_at": "2024-05-02T06:28:09.537157",
+                "lifecycle": "assigned"
+            }
+        ]
+    },
+    {
+        "project_id": 39,
+        "workload_id": 2606,
+        "file_id": null,
+        "filename": "samplejkuop.pdf",
+        "kpi_compliance": null,
+        "id": 2764014,
+        "created_at": "2024-05-02T06:26:06.575724",
+        "kpi_lifecycle": null,
+        "order": 2764076,
+        "updated_at": null,
+        "kpi_multiallocations": null,
+        "order_str": "000005",
+        "updated_by": null,
+        "row_capture": {
+            "PageNo": 2,
+            "Hierarchy": "",
+            "Original_Hierarchy": null,
+            "Text": "Simple PDF File 2",
+            "Context": "",
+            "SubType": "Heading",
+            "RawData": null,
+            "Coordinates": {
+                "width": 612,
+                "height": 792,
+                "x1": 64,
+                "y1": 50,
+                "x2": 612,
+                "y2": 72,
+                "page": 2
+            },
+            "Recheck": false,
+            "Type": "Text",
+            "i18n": {
+                "en": "Simple PDF File 2"
+            },
+            "updated_at": null,
+            "id": 2764014,
+            "Characterization": "Information",
+            "Char_Score": "High",
+            "Category": "Information",
+            "Category_Score": "High",
+            "System Entities": "",
+            "Activities": "",
+            "Acronyms": "",
+            "project_management": null,
+            "Finance": null,
+            "Commercial": null,
+            "Contractual": null,
+            "Digital": "",
+            "Cybersecurity": "",
+            "Standards": null,
+            "Allocation": {
+                "NA": 0
+            }
+        },
+        "lifecycles": [],
+        "allocations": []
+    },
+    {
+        "project_id": 39,
+        "workload_id": 2606,
+        "file_id": null,
+        "filename": "samplejkuop.pdf",
+        "kpi_compliance": "tbd",
+        "id": 2764015,
+        "created_at": "2024-05-02T06:26:06.575726",
+        "kpi_lifecycle": "characterized",
+        "order": 2764077,
+        "updated_at": null,
+        "kpi_multiallocations": [
+            {
+                "allocation": "SIG System",
+                "lifecycle": "characterized",
+                "compliance": "tbd",
+                "user_id": null,
+                "created_at": "02-05-2024 06:28:09"
+            }
+        ],
+        "order_str": "000006",
+        "updated_by": null,
+        "row_capture": {
+            "PageNo": 2,
+            "Hierarchy": "",
+            "Original_Hierarchy": null,
+            "Text": "...continued from page 1. Yet more text. And more text. And more text. And more text. And more text. And more text. And more text. And more text. Oh, how boring typing this stuff. But not as boring as watching paint dry. And more text. And more text. And more text. And more text. Boring. More, a little more text. The end, and just as well.",
+            "Context": "",
+            "SubType": "Paragraph",
+            "RawData": null,
+            "Coordinates": {
+                "width": 612,
+                "height": 792,
+                "x1": 72,
+                "y1": 93,
+                "x2": 612,
+                "y2": 151,
+                "page": 2
+            },
+            "Recheck": false,
+            "Type": "Text",
+            "i18n": {
+                "en": "...continued from page 1. Yet more text. And more text. And more text. And more text. And more text. And more text. And more text. And more text. Oh, how boring typing this stuff. But not as boring as watching paint dry. And more text. And more text. And more text. And more text. Boring. More, a little more text. The end, and just as well."
+            },
+            "updated_at": null,
+            "id": 2764015,
+            "Characterization": "Requirement",
+            "Char_Score": "Low",
+            "Category": "Non-Technical Req",
+            "Category_Score": "High",
+            "System Entities": "",
+            "Activities": "",
+            "Acronyms": "",
+            "project_management": null,
+            "Finance": null,
+            "Commercial": null,
+            "Contractual": null,
+            "Digital": "",
+            "Cybersecurity": "",
+            "Standards": null,
+            "Allocation": {
+                "SIG System": "low"
+            }
+        },
+        "lifecycles": [],
+        "allocations": [
+            {
+                "owning_id": 2764015,
+                "id": 575437,
+                "pbs": "SIG System",
+                "allocation_score": "low",
+                "obs": null,
+                "created_by": null,
+                "updated_at": null,
+                "compliance": "tbd",
+                "allocation": "SIG System",
+                "abs": null,
+                "receiver": null,
+                "created_at": "2024-05-02T06:28:09.553551",
+                "lifecycle": "characterized"
+            }
+        ]
+    }
+]
+
+
+
+
+
+
+

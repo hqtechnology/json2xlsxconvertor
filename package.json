@@ -1,0 +1,13 @@
+{
+  "name": "json2xlsxconvertor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Harish Madineni",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "xlsx": "^0.18.5"
+  }
+}
