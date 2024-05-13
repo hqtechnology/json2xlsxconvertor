@@ -1,11 +1,38 @@
 const XLSX = require('xlsx');
+const express = require('express');
+const bodyParser = require('body-parser');
+const fs = require('fs');
+
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.json());
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
+app.post('/convert', (req, res) => {
+  const jsonData = req.body.jsonData;
+
+  jsonToExcel(jsonData);
+  const filePath = __dirname + '/output.xlsx';
+
+  res.download(filePath, 'output.xlsx', (err) => {
+    fs.unlinkSync(filePath);
+  });
+});
+
+app.listen(port, () => {
+  console.log(`App listening at http://localhost:${port}`);
+});
 
 function main() {
   const jsondata = require('./json-excel.json');
   jsonToExcel(jsondata);
 }
 
-main();
+// main();
 
 function jsonToExcel(jsondata) {
   var refinedData = [];
