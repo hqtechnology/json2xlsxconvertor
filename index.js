@@ -113,12 +113,13 @@ function jsonToExcel(jsondata) {
 function customMergeCells(worksheet) {
   const range = XLSX.utils.decode_range(worksheet['!ref']);
 
-  for (let C = 1; C <= range.e.c; C++) {
-    //TODO: maintain hash instead of string value.
+  for (let C = 0; C <= range.e.c; C++) {
     const mergedCells = {};
+    let previouscellvalue = undefined;
     for (let R = 1; R <= range.e.r; R++) {
       const cellAddress = XLSX.utils.encode_cell({ r: R, c: C });
       const cellValue = worksheet[cellAddress]?.v;
+      previouscellvalue = cellValue;
 
       if (!mergedCells[cellValue]) {
         mergedCells[cellValue] = { start: cellAddress, end: cellAddress };
@@ -139,23 +140,40 @@ function customMergeCells(worksheet) {
         const currentCol = currCellAddr.c;
         const currentRow = currCellAddr.r;
 
-        if (prevCol === currentCol && prevRow === currentRow - 1) {
+        if (
+          previouscellvalue !== cellValue &&
+          mergedCells[cellValue] &&
+          R != 1
+        ) {
+          addToMerges(
+            worksheet,
+            mergedCells[cellValue].start,
+            mergedCells[cellValue].end
+          );
+          mergedCells[cellValue].start = cellAddress;
+          mergedCells[cellValue].end = cellAddress;
+        } else if (prevCol === currentCol && prevRow === currentRow - 1) {
           mergedCells[cellValue].end = currentEnd;
         } else {
           mergedCells[cellValue] = { start: prevStart, end: currentEnd };
         }
+        previouscellvalue = cellValue;
       }
     }
 
     for (const key in mergedCells) {
-      const mergedRange = `${mergedCells[key].start}:${mergedCells[key].end}`;
-      worksheet['!merges'] = worksheet['!merges'] || [];
-      worksheet['!merges'].push({
-        s: XLSX.utils.decode_range(mergedRange).s,
-        e: XLSX.utils.decode_range(mergedRange).e,
-      });
+      addToMerges(worksheet, mergedCells[key].start, mergedCells[key].end);
     }
   }
+}
+function addToMerges(worksheet, start, end) {
+  const mergedRange = `${start}:${end}`;
+  worksheet['!merges'] = worksheet['!merges'] || [];
+  const range = XLSX.utils.decode_range(mergedRange);
+  worksheet['!merges'].push({
+    s: range.s,
+    e: range.e,
+  });
 }
 
 function hashCode(str) {
