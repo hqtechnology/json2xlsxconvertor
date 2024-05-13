@@ -166,6 +166,7 @@ function customMergeCells(worksheet) {
     }
   }
 }
+
 function addToMerges(worksheet, start, end) {
   const mergedRange = `${start}:${end}`;
   worksheet['!merges'] = worksheet['!merges'] || [];
